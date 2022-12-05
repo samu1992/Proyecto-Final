@@ -1,0 +1,39 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    min-width: 700px;
+    max-width: 700px;
+    max-height: 228px;
+}
+.container-img img{
+    border-radius: 2%;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    height: 227px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+
+.titulo{
+    text-align: left;
+    margin-top: 0px;
+    
+}
+.titulo1{
+    text-align: left;
+    margin: 0px;
+}
+.agregar{
+    margin-bottom: 0px;
+    min-width: 300px;
+}
+

@@ -1,0 +1,14 @@
+.contenedor-produc{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    margin: 10px;
+    width: 18rem;
+}
+.img{
+    width: 286px;
+    height: 180px;
+    object-fit: cover;
+}
+

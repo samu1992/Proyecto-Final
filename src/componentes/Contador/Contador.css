@@ -1,0 +1,16 @@
+.contenedorClics{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    padding-left: 0px;
+}
+#contar{
+    margin: 7px;
+    margin-left: 0px;
+}
+.num{
+    margin: 0px 20px 0px 20px;
+    font-size: 25px;
+}

@@ -1,0 +1,44 @@
+.barraNav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.20);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Lato, sans-serif;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.content-enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-right: 27px;
+}
+.content-enlaces li{
+    margin: 25px;
+    list-style: none;
+    transition: all 0.5s;
+}
+.content-enlaces li:hover{
+    transform: scale(1.1);
+}
+.enlace{
+    text-decoration: none;
+    color: #545454;
+    transition: all 0.4s;
+}
+.enlace:hover{
+    color: #0b0c0d;
+}
+p{
+    font-size: 18px;
+    color: #545454;
+    padding: 5px;
+    border-radius: 50%;
+}

@@ -1,0 +1,10 @@
+.container-logo{
+    position: absolute;
+    background-image: url(logo1.png);
+	background-size: cover;
+	background-position: center;
+    left: 100px;
+    width: 350px;
+    height: 55px;
+    margin-top: 12px;
+}
