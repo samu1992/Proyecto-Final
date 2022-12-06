@@ -5,6 +5,12 @@ Shoe Store, es un Ecommerce en desarrollo con la finalidad de facilitar al usuar
 
 El proyecto en cuestion cuenta con las funcionalidades necesarias e interactividad para el usuario; carrito de compras, stock de productos entre otros.
 
+### Desarrollado con:
+
+React Js.
+React-bootstrap.
+React-router-dom.
+
 ![gif](https://github.com/samu1992/Proyecto-Final/blob/master/src/componentes/CartWidget/Gif.gif)
 
 
