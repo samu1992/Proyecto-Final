@@ -1,5 +1,5 @@
 import './NavBar.css';
-import CartWidget from '../CartWidget/CartWidget';
+//import CartWidget from '../CartWidget/CartWidget';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'
@@ -17,17 +17,19 @@ function Navbar(){
         }
     }
     return (
-        <div className='barraNav'>
-            <CartWidget/>
-            <ul className='content-enlaces'>
-                <li><Link className='enlace' to="/">Inicio</Link></li>
-                <li><Link className='enlace' to="/MenuApi">Productos</Link></li>
-                <li><Link className='enlace' to="/categoria/hombre">Hombre</Link></li>
-                <li><Link className='enlace' to="/categoria/mujer">Mujer</Link></li>
-                <li><a className='enlace' href='.'>Galeria</a></li>
-                <Link className='enlace' to="/Carrito"><FontAwesomeIcon className='icon' icon={faCartShopping}/></Link>
-                {Contador()}
-            </ul>
+        <div className='contenedorNav'>
+            <div className='barraNav'>
+                <ul className='content-enlaces'>
+                    <li><Link className='enlace' to="/">Home</Link></li>
+                    {/* <li><Link className='enlace' to="/MenuApi">Productos</Link></li> */}
+                    <li><Link className='enlace' to="/categoria/hombre">Men</Link></li>
+                    <li><Link className='enlace' to="/categoria/mujer">Woman</Link></li>
+                </ul>
+                <div className='cart'>
+                    <Link className='enlace' to="/Carrito"><FontAwesomeIcon className='icon' icon={faCartShopping} /></Link>
+                    {Contador()}
+                </div>
+            </div>
         </div>
     )
 };

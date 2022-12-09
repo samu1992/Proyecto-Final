@@ -3,6 +3,7 @@ import Productos from '../MisProductos/MisProductos';
 import {  useParams } from "react-router-dom";
 import Spinner from 'react-bootstrap/Spinner';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
+//import CartWidget from "../CartWidget/CartWidget";
 
 
 const MenuApi = () => {
@@ -38,7 +39,7 @@ const MenuApi = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexWrap: 'wrap',
-            }}> {loading ? (<Spinner animation="border" role="status" />) : (<Productos productos={productos} />)}
+            }}>{loading ? (<Spinner animation="border" role="status" />) : (<Productos productos={productos} />)}
         </div>
     )
 }

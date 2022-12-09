@@ -1,6 +1,9 @@
+//import CartWidget from "../CartWidget/CartWidget"
 const Home = () => {
   return (
-    <div>trabajando en ello</div>
+    <div>
+  
+    </div>
   )
 }
 

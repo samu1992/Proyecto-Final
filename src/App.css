@@ -1,8 +1,17 @@
 .content-shop{ 
+    display: inline-block;
     justify-content: center;
     align-items: center;
-    background-color: #B3DED1;
+    background-color: #ffffff;
     text-decoration: none;
-    padding: 20px;
-    height: 100vh;
+    width: 100%;
+    height: 100vh auto; 
 } 
+.CartWidget{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px;
+    z-index: 8;
+}

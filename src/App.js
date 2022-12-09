@@ -5,8 +5,9 @@ import MenuApi from './componentes/MenuApi/MenuApi';
 import Carrito from './componentes/Carrito/Carrito';
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import DetalleProducto from './componentes/DetalleProducto/DetalleProducto';
-import Home from './componentes/Home/Home';
+//import Home from './componentes/Home/Home';
 import CartProvider from './Context/CartProvider';
+import CartWidget from './componentes/CartWidget/CartWidget';
 
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
       <CartProvider>
         <BrowserRouter>
           <Navbar />
+          <div className='CartWidget'><CartWidget/></div>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<MenuApi />} />
             <Route path="/categoria/:categoriaNombre" element={<MenuApi />} />
             <Route path='/MenuApi' element={<MenuApi />} />
             <Route path='/Carrito' element={<Carrito />} />

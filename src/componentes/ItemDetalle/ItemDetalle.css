@@ -5,12 +5,21 @@
     min-width: 700px;
     max-width: 700px;
     max-height: 228px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 3px 11px 21px -3px rgba(0,0,0,0.42);
+-moz-box-shadow: 3px 11px 21px -3px rgba(0,0,0,0.42);
+box-shadow: 3px 11px 21px -3px rgba(0,0,0,0.42);
 }
 .container-img img{
     border-radius: 2%;
     margin-right: 5px;
     margin-bottom: 0px;
     height: 227px;
+}
+.itemDetalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .body{

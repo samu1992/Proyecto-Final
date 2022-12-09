@@ -11,6 +11,7 @@ const ItemDetalle = ({ detalleProduct }) => {
     const { addCart } = useContext(CartContext);
 
     return (
+        <div className='itemDetalle'>
         <Card className='contenedor'>
                 <div className='container-img'><img src={`../images/${detalleProduct.imagen}`} className="imagen" alt="img" /></div>
                     <Card.Body className='body'>
@@ -23,6 +24,7 @@ const ItemDetalle = ({ detalleProduct }) => {
                             Agregar a Carrito</Button>
                     </Card.Body>
         </Card>
+        </div>
     )
 };
 
