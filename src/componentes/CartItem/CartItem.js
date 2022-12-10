@@ -11,19 +11,19 @@ const CartItem = () => {
     return cart.map(element => {
         console.log(element);
         return (
-            <div key={element.id} className='container-produc'>
-                <div className='imagen'><img alt='img' src={`/images/${element.imagen}`} /></div>
-                <div className='bodyContent'>
-                    <div className='datos'>
+            <div key={element.id} className='container_product'>
+                <div className='container_product__image'><img alt='img' src={`/images/${element.imagen}`} /></div>
+                <div className='container_product__body'>
+                    <div className='container_product__body__data'>
                         <p>{element.nombre}</p>
                         <h6>Cantidad: {element.cantidad}</h6>
                         <span>C/U $ {element.precio}</span>
                     </div>
-                    <div className='precio'>
+                    <div className='container_product__body__price'>
                         <span>$ {element.precio * element.cantidad}</span>
                     </div>
-                    <div className='iconContent'>
-                        <FontAwesomeIcon onClick={() => removeItem(element.id)} className='icon1' icon={faXmark} />
+                    <div className='container_product__body__icon'>
+                        <FontAwesomeIcon onClick={() => removeItem(element.id)} className='icon' icon={faXmark} />
                     </div>
                 </div>
             </div>

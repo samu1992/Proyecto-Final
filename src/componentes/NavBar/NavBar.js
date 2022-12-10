@@ -17,16 +17,15 @@ function Navbar(){
         }
     }
     return (
-        <div className='contenedorNav'>
-            <div className='barraNav'>
-                <ul className='content-enlaces'>
-                    <li><Link className='enlace' to="/">Home</Link></li>
-                    {/* <li><Link className='enlace' to="/MenuApi">Productos</Link></li> */}
-                    <li><Link className='enlace' to="/categoria/hombre">Men</Link></li>
-                    <li><Link className='enlace' to="/categoria/mujer">Woman</Link></li>
+        <div className='container_nav'>
+            <div className='container_nav__body'>
+                <ul className='container_nav__body__links'>
+                    <li><Link className='links' to="/">Home</Link></li>
+                    <li><Link className='links' to="/categoria/hombre">Men</Link></li>
+                    <li><Link className='links' to="/categoria/mujer">Woman</Link></li>
                 </ul>
-                <div className='cart'>
-                    <Link className='enlace' to="/Carrito"><FontAwesomeIcon className='icon' icon={faCartShopping} /></Link>
+                <div className='container_nav__body__cart'>
+                    <Link className='links' to="/Carrito"><FontAwesomeIcon className='icon' icon={faCartShopping} /></Link>
                     {Contador()}
                 </div>
             </div>

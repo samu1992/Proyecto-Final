@@ -11,16 +11,16 @@ const ItemDetalle = ({ detalleProduct }) => {
     const { addCart } = useContext(CartContext);
 
     return (
-        <div className='itemDetalle'>
-        <Card className='contenedor'>
-                <div className='container-img'><img src={`../images/${detalleProduct.imagen}`} className="imagen" alt="img" /></div>
-                    <Card.Body className='body'>
-                        <Card.Title className='titulo'>{detalleProduct.nombre}</Card.Title>
-                        <Card.Subtitle className='titulo1'><span>Precio:  USD {detalleProduct.precio}</span></Card.Subtitle>
+        <div className='container_item'>
+        <Card className='container_item__card'>
+                <div className='container_item__card__img'><img src={`../images/${detalleProduct.imagen}`}  alt="img" /></div>
+                    <Card.Body className='container_item__card__body'>
+                        <Card.Title className='container_item__card__body__title'>{detalleProduct.nombre}</Card.Title>
+                        <Card.Subtitle className='container_item__card__body__subtitle'><span>Precio:  USD {detalleProduct.precio}</span></Card.Subtitle>
                         <h6>Cantidad: {cantidad}</h6>
                         <h6> En Stock: {detalleProduct.stock}</h6>
-                        <Contador className='contador' setCantidad={setCantidad}/>
-                        <Button className='agregar' variant='dark' onClick={() => addCart(detalleProduct, cantidad)}>
+                        <Contador  setCantidad={setCantidad}/>
+                        <Button className='container_item__card__body__add' variant='dark' onClick={() => addCart(detalleProduct, cantidad)}>
                             Agregar a Carrito</Button>
                     </Card.Body>
         </Card>

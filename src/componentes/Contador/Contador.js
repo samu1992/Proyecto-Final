@@ -11,9 +11,9 @@ const Contador = ({setCantidad}) => {
         )
     }
     return (
-        <div className='contenedorClics'>
-            <Button id='contar' variant='secondary' onClick={agregar}>Agregar</Button>
-            <Button  id='contar' variant='secondary' onClick={quitar}>Quitar</Button>
+        <div className='container_amount'>
+            <Button id='amount' variant='secondary' onClick={agregar}>Agregar</Button>
+            <Button  id='amount' variant='secondary' onClick={quitar}>Quitar</Button>
         </div>
     )
 }

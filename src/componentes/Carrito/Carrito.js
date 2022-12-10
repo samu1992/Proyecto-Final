@@ -65,73 +65,73 @@ const Carrito = () => {
   };
 
   return (
-    <div className='contenedor-principal'>
-      <div className='container-carro'>
-        <h2 className="titulo"><span>Tu Carrito</span></h2>
+    <div className='container'>
+      <div className='container_cart'>
+        <h2 className="container_cart__titulo"><span>Tu Carrito</span></h2>
         <p>TOTAL ({totalCantidad} productos) $ {total} </p>
-        <p>Los artículos en tu carrito no están reservados. Terminá el proceso de compra ahora para hacerte<br/> con ellos.</p>
+        <p>Los artículos en tu carrito no están reservados. Terminá el proceso de compra ahora para hacerte<br /> con ellos.</p>
         <hr />
         <ListGroup>
           <CartItem />
         </ListGroup>
-        
+
       </div>
-      <div className='contenedor-dos'>
-        <div className='accion-pagar'>
+      <div className='container_cart__aside'>
+        <div className='container_cart__aside__pay'>
           IR A PAGAR
           <FontAwesomeIcon icon={faArrowRight} />
-          </div>
-          <h4>Resumen de compra</h4>
-          <div className='resumen-compra'>
-          <div className='resumen-compra-1'>
+        </div>
+        <h4>Resumen de compra</h4>
+        <div className='container_cart__aside__abstract'>
+          <div>
             <p>{totalCantidad} productos</p>
             <p>ENTREGA</p>
             <span>TOTAL</span>
-            </div>
-          <div className='resumen-compra-2'>
+          </div>
+          <div className='container_cart__aside__abstract__detail'>
             <p>$ {total}</p>
             <p>GRATIS</p>
             <span>${total}</span>
           </div>
-          </div>
-        
-      <Form className='formulario'>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            type="email"
-            name='email'
-            placeholder="Email"
-            value={formValues.email}
-            onChange={handleInputChange}
-          />
-        </Form.Group>
+        </div>
 
-        <Form.Group className="mb-3" controlId="formBasicText">
-          <Form.Label>Nombre</Form.Label>
-          <Form.Control
-            type="text"
-            name='nombre'
-            placeholder="Nombre"
-            value={formValues.nombre}
-            onChange={handleInputChange}
-          />
-        </Form.Group>
+        <Form className='container_cart__aside__form'>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              type="email"
+              name='email'
+              placeholder="Email"
+              value={formValues.email}
+              onChange={handleInputChange}
+            />
+          </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicText">
-          <Form.Label>Telefono</Form.Label>
-          <Form.Control
-            type="text"
-            name='telefono'
-            placeholder="Telefono"
-            value={formValues.telefono}
-            onChange={handleInputChange}
-          />
-        </Form.Group>
-      </Form>
-      <div className='container-button'>
-          <Button variant='dark' className='boton' onClick={() => clear()}>Vaciar</Button>
-          <Button variant='dark' className='boton1' onClick={enviarOrden}>Finalizar Compra</Button>
+          <Form.Group className="mb-3" controlId="formBasicText">
+            <Form.Label>Nombre</Form.Label>
+            <Form.Control
+              type="text"
+              name='nombre'
+              placeholder="Nombre"
+              value={formValues.nombre}
+              onChange={handleInputChange}
+            />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicText">
+            <Form.Label>Telefono</Form.Label>
+            <Form.Control
+              type="text"
+              name='telefono'
+              placeholder="Telefono"
+              value={formValues.telefono}
+              onChange={handleInputChange}
+            />
+          </Form.Group>
+        </Form>
+        <div className='container_cart__aside__button'>
+          <Button variant='dark'  onClick={() => clear()}>Vaciar</Button>
+          <Button variant='dark'  onClick={enviarOrden}>Finalizar Compra</Button>
         </div>
       </div>
     </div>

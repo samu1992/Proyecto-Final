@@ -1,4 +1,4 @@
-.contenedorNav{
+.container_nav{
     position: fixed;
     padding: 0px;
     background-color: #ffffff;
@@ -6,7 +6,7 @@
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-.barraNav{
+.container_nav__body{
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -16,7 +16,7 @@
     
 }
 
-.content-enlaces{
+.container_nav__body__links{
     display: flex;
     font-size: 20px;
     margin-top: 15px;
@@ -26,20 +26,20 @@
     letter-spacing: 3px;
     margin-left: 10px;  
 }
-.content-enlaces li{
+.container_nav__body__links li{
     margin-right: 25px;
     list-style: none;
     transition: all 0.5s;
 }
-.content-enlaces li:hover{
+.container_nav__body__links li:hover{
     transform: scale(1.1);
 }
-.enlace{
+.links{
     text-decoration: none;
     color: #000000;
     transition: all 0.4s;
 }
-.enlace:hover{
+.links:hover{
     color: #0b0c0d;
 }
 p{
@@ -48,7 +48,7 @@ p{
     color: #000000;
     padding: 5px;
 }
-.cart{
+.container_nav__body__cart{
     font-size: 25px;
     display: flex;
     justify-content: center;

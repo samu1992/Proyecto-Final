@@ -8,8 +8,8 @@ import  Button  from 'react-bootstrap/Button';
 
 function Items({ producto }) {
     return (
-        
-            <Card  className=" contenedor-produc card">
+        <div className='container_list'>
+            <Card>
                 <Card.Img variant='top' className='img' src={`/images/${producto.imagen}`} />
                 <Card.Body>
                     <Card.Title>{producto.nombre}</Card.Title>
@@ -19,7 +19,7 @@ function Items({ producto }) {
                     </Link>
                 </Card.Body>
             </Card> 
-        
+            </div>
     )
 };
 

@@ -12,15 +12,14 @@ import CartWidget from './componentes/CartWidget/CartWidget';
 
 function App() {
   return (
-    <div className="content-shop">
+    <div className="container_shop">
       <CartProvider>
         <BrowserRouter>
           <Navbar />
-          <div className='CartWidget'><CartWidget/></div>
+          <div className='container_shop__cartwidget'><CartWidget/></div>
           <Routes>
             <Route path='/' element={<MenuApi />} />
             <Route path="/categoria/:categoriaNombre" element={<MenuApi />} />
-            <Route path='/MenuApi' element={<MenuApi />} />
             <Route path='/Carrito' element={<Carrito />} />
             <Route path='ItemDetalle/:id' element={<DetalleProducto />} />
           </Routes>

@@ -1,4 +1,4 @@
-.contenedorClics{
+.container_amount{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -6,11 +6,7 @@
     padding: 5px;
     padding-left: 0px;
 }
-#contar{
+#amount{
     margin: 7px;
     margin-left: 0px;
-}
-.num{
-    margin: 0px 20px 0px 20px;
-    font-size: 25px;
 }
