@@ -5,7 +5,7 @@ import MenuApi from './componentes/MenuApi/MenuApi';
 import Carrito from './componentes/Carrito/Carrito';
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import DetalleProducto from './componentes/DetalleProducto/DetalleProducto';
-//import Home from './componentes/Home/Home';
+import Footer from './componentes/Footer/Footer';
 import CartProvider from './Context/CartProvider';
 import CartWidget from './componentes/CartWidget/CartWidget';
 
@@ -16,15 +16,17 @@ function App() {
       <CartProvider>
         <BrowserRouter>
           <Navbar />
-          <div className='container_shop__cartwidget'><CartWidget/></div>
+          <CartWidget />
           <Routes>
             <Route path='/' element={<MenuApi />} />
             <Route path="/categoria/:categoriaNombre" element={<MenuApi />} />
             <Route path='/Carrito' element={<Carrito />} />
             <Route path='ItemDetalle/:id' element={<DetalleProducto />} />
           </Routes>
+            <Footer />
         </BrowserRouter >
       </CartProvider>
+
     </div>
   );
 }

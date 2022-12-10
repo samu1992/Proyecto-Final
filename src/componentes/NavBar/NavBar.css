@@ -1,4 +1,5 @@
 .container_nav{
+    top: 0;
     position: fixed;
     padding: 0px;
     background-color: #ffffff;

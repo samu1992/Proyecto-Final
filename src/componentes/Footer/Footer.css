@@ -1,0 +1,24 @@
+.container_footer__legal{
+    display: flex;
+    display: inline-block;
+    background-color: #444341;
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+    bottom: 0px;
+}
+.container_footer__legal ul{
+    color: rgb(240, 248, 255);
+    gap: 15px; 
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.container_footer__legal li{
+    padding-right: 10px;
+    border-right: 1px solid #ffffff;
+    cursor: pointer;
+}
+#container_footer__legal__6{
+    border-right: none;
+}

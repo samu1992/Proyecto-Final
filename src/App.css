@@ -1,17 +1,9 @@
 .container_shop{ 
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     text-decoration: none;
     width: 100%;
-    height: 100vh auto; 
+    min-height: 100vh; 
+    padding: 0;
 } 
-.container_shop__cartwidget{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-    margin-top: 80px;
-    z-index: 8;
-}
