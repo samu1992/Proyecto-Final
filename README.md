@@ -1,4 +1,4 @@
-![logo](https://github.com/samu1992/Proyecto-Final/blob/master/src/componentes/CartWidget/logo1.png)
+![logo](https://github.com/samu1992/Proyecto-Final/blob/master/src/componentes/CartWidget/c.png)
 ## Descripcion del Proyecto
 
 Shoe Store, es un Ecommerce en desarrollo con la finalidad de facilitar al usuario la compra de calzado de buena calidad desde cualquier lugar del pais.
