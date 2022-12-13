@@ -16,7 +16,7 @@ const ItemDetalle = ({ detalleProduct }) => {
                 <div className='container_item__card__img'><img src={`../images/${detalleProduct.imagen}`}  alt="img" /></div>
                     <Card.Body className='container_item__card__body'>
                         <Card.Title className='container_item__card__body__title'>{detalleProduct.nombre}</Card.Title>
-                        <Card.Subtitle className='container_item__card__body__subtitle'><span>Precio:  USD {detalleProduct.precio}</span></Card.Subtitle>
+                        <Card.Subtitle className='container_item__card__body__subtitle'>Precio:  USD {detalleProduct.precio}</Card.Subtitle>
                         <h6>Cantidad: {cantidad}</h6>
                         <h6> En Stock: {detalleProduct.stock}</h6>
                         <Contador  setCantidad={setCantidad}/>

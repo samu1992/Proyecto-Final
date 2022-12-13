@@ -10,6 +10,19 @@
     object-fit: cover;
     width: 286px;
     height: 280px;
-    object-fit: cover;
+}
+@media only screen and (max-width: 650px){
+    .container_list{
+        min-width: 100%;
+    }
+    .container_list:hover{
+        transform: scale(0.9);
+    }
+
+    .img{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
 }
 

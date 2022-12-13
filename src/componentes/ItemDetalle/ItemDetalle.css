@@ -48,3 +48,21 @@ box-shadow: 3px 11px 21px -3px rgba(0,0,0,0.42);
     min-width: 300px;
 }
 
+@media only screen and (max-width: 650px){
+    .container_item__card{
+        flex-direction: column;
+        min-width: 90%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .container_item__card__img img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 5px;
+    }
+    .container_item__card__body{
+        padding: 5px;
+    }
+}
+

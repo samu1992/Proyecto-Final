@@ -3,7 +3,15 @@
     flex-direction: column;
     background-color: #ffffff;
     text-decoration: none;
-    width: 100%;
+    margin: 0;
+    min-width: 100%;
     min-height: 100vh; 
     padding: 0;
 } 
+
+@media only screen and (max-width: 650px){
+    .container_shop{
+        min-width: 100%;
+        min-height: 100vh;
+    }
+}

@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   background-color: #ffffff;
   padding: 0;
+  min-width: 100%;
   min-height: 100vh;
 }
 
@@ -9,5 +10,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
 
 

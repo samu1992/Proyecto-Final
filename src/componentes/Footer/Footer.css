@@ -22,3 +22,29 @@
 #container_footer__legal__6{
     border-right: none;
 }
+.container_footer__legal__networks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.container_footer__legal__networks a{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 650px){
+    .container_footer__legal{
+        min-height: 100vh;
+    }
+    .container_footer__legal ul{
+        display: block;
+        text-align: start;
+        padding: 5px;
+        font-size: auto;
+    }
+    .container_footer__legal li{
+        padding: 10px;
+        border-right: none;
+    }
+}
